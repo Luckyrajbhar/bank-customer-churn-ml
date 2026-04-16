@@ -1,7 +1,7 @@
 # Bank Customer Churn Prediction
 
 ## Live Demo
-🚀 **[View the Live App](https://your-app.streamlit.app)** (Replace with your actual Streamlit Cloud link after deployment)
+🚀 **[View the Live App](https://bank-customer-churn-ml-9cvup2lt7eazkdlzcvkvny.streamlit.app/)**
 
 ## Overview
 This project predicts whether a bank customer will churn (leave the bank) based on their profile and transaction data. It uses machine learning models to analyze customer behavior and provides an interactive web app for predictions.
