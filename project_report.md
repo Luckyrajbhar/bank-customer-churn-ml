@@ -1,39 +1,38 @@
 # Bank Customer Churn Prediction Report
 
 ## 1. Project Overview
-This project builds a machine learning solution to predict whether a bank customer will churn (leave the bank), based on customer demographics and transaction features.
+This AI-generated report describes a bank customer churn prediction solution that uses ensemble machine learning to identify customers at risk of leaving.
 
 ## 2. Problem Statement
-Customer churn leads to revenue loss for banks. The goal is to identify at-risk customers and support proactive retention strategies.
+Customer churn reduces revenue and increases acquisition cost. Predicting churn early enables banks to implement targeted retention strategies.
 
 ## 3. Data and Features
-- Source dataset includes customer details such as credit score, age, tenure, balance, number of products, country, gender, and churn outcome.
-- Irrelevant columns were removed.
-- Encoded categorical variables using one-hot encoding for gender and country.
-- Created a derived feature: `balance_per_product` = balance / (products_number + 1).
+- Dataset includes credit score, age, tenure, balance, number of products, country, gender, and churn label.
+- Removed irrelevant features such as customer ID.
+- Encoded categorical variables: gender and country.
+- Added `balance_per_product` as a new feature to capture customer engagement.
 
 ## 4. Preprocessing
-- Standard scaling of numerical features using `StandardScaler`.
-- One-hot encoding for categorical fields: gender and country.
-- Feature engineering improved model interpretability and prediction performance.
+- Standardized numerical features with `StandardScaler`.
+- Applied one-hot encoding to categorical variables.
+- Created a clean feature set for model training.
 
 ## 5. Model Architecture
-- Used an ensemble Voting Classifier combining:
-  - Support Vector Machine (SVM)
-  - Gradient Boosting Classifier
-  - XGBoost Classifier
-- Voting method: soft voting based on predicted probabilities.
+- Trained an ensemble Voting Classifier.
+- Combined SVM, Gradient Boosting, and XGBoost models.
+- Used soft voting to aggregate prediction probabilities.
 
-## 6. Application and Deployment
-- Interactive Streamlit app available via `app.py`.
-- User inputs customer profile data and receives churn prediction probability.
-- The app includes real-time prediction feedback and risk insight.
+## 6. Application
+- `app.py` is a Streamlit application for interactive churn prediction.
+- Customers can be scored live based on input features.
+- The app displays risk level and retention guidance.
 
-## 7. Files Added
-- `Bank_Churn_Presentation.pptx`: Project presentation slides.
-- `project_report.md`: Detailed project report.
+## 7. Deliverables
+- `Bank_Churn_Presentation.pptx`: AI-styled project presentation.
+- `project_report.md`: Detailed written report.
+- `generate_deliverables.py`: Script to regenerate deliverables anytime.
 
-## 8. Next Steps
-- Add additional features and model tuning.
-- Incorporate more customer behavior data.
-- Convert the report to PDF if needed.
+## 8. Recommendations
+- Tune model hyperparameters and validate with cross-validation.
+- Explore additional feature engineering and customer segmentation.
+- Deploy the app for real-time retention analysis.
